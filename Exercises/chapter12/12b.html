@@ -2,12 +2,34 @@
 <html>
   <head>
     <title>Flex exercise 1</title>
-    <link rel="stylesheet" href="styles/12a.css" />
+    <link rel="stylesheet" href="styles/12b.css" />
+    <style>
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+      }
+      .lightblue {
+        background-color: lightblue;
+      }
+      .lightpink {
+        background-color: lightpink;
+      }
+      .item1 {
+        width: 50px;
+      }
+      .item2 {
+        flex: 1;
+      }
+      .item3 {
+        width: 75px;
+      }
+    </style>
   </head>
   <body>
-    <div class="grid">
-      <div class="lightblue">200px</div>
-      <div class="lightpink">75px</div>
+    <div class="flexbox">
+      <div class="lightblue item1">Item 1</div>
+      <div class="lightpink item2">Item 2</div>
+      <div class="lightblue item3">Item 3x</div>
     </div>
   </body>
 </html>
